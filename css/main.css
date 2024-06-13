@@ -34,8 +34,8 @@ p {
   font-size: 1.8rem;
 }
 
-p{
-  text-wrap:balance
+p {
+  text-wrap: balance;
 }
 
 .wrapper {
@@ -136,26 +136,67 @@ header {
   transform: skewY(12deg) translateY(-8rem);
 }
 
-.section-feature .wrapper{
+.section-feature .wrapper {
   transform: skewY(-12deg);
 }
 
-
-
-.feature:not(:last-child){
+.feature:not(:last-child) {
   margin-bottom: 5rem;
 }
 
-.feature__header{
+.feature__header {
   margin-bottom: 1rem;
 }
 
-.feature__icon{
+.feature__icon {
   margin-bottom: 1rem;
 }
 
-.heading__tertiary{
+.heading__tertiary {
   font-size: 2.6rem;
   font-weight: 700;
 }
 
+/* ******************************
+*******SECTION TESTIMONIALS******
+******************************* */
+.section-testimonials{
+  padding: 5rem 0 5rem;
+}
+.testimonial__content{
+  margin-bottom: 3rem;
+}
+
+.testimonial__quote--1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.testimonial__quote--2 {
+  font-size: 1.6rem;
+}
+
+.testimonial__img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.testimonial__link{
+  font-size: 1.8rem;
+  color: #5392bf;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+/* ******************************
+*******FOOTER**************
+******************************* */
