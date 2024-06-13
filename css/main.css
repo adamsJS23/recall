@@ -160,10 +160,10 @@ header {
 /* ******************************
 *******SECTION TESTIMONIALS******
 ******************************* */
-.section-testimonials{
+.section-testimonials {
   padding: 5rem 0 5rem;
 }
-.testimonial__content{
+.testimonial__content {
   margin-bottom: 3rem;
 }
 
@@ -185,13 +185,13 @@ header {
   margin-bottom: 1rem;
 }
 
-.testimonial__name{
+.testimonial__name {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.testimonial__link{
+.testimonial__link {
   font-size: 1.8rem;
   color: #5392bf;
   display: inline-block;
@@ -200,3 +200,39 @@ header {
 /* ******************************
 *******FOOTER**************
 ******************************* */
+.footer {
+  padding: 4rem 0 6rem;
+  background-color: #ededed;
+}
+
+.footer__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__cta-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img{
+  width: 100%;
+}
+
+.footer .wrapper > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer__nav--secondary {
+  display: flex;
+}
+
+.terms__link,
+.privacy__link {
+  font-size: 1.4rem;
+}
+
+.footer__nav--secondary li:nth-child(2)::before {
+  content: "-";
+}
