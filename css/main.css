@@ -34,6 +34,19 @@ p {
   font-size: 1.8rem;
 }
 
+p{
+  text-wrap:balance
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ******************************
+*******HEADER**************
+******************************* */
 header {
   padding: 3rem 0;
   margin-bottom: 3rem;
@@ -41,12 +54,6 @@ header {
 
 .header-cta {
   display: none;
-}
-
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .logo {
@@ -69,14 +76,15 @@ header {
 .nav__link {
   font-size: 1.6rem;
   color: #000;
-  display: inline-block;
-  /* padding-bottom: 1rem; */
 }
 
 .nav__link--active {
   text-decoration: underline;
 }
 
+/* ******************************
+*******SECTION HERO**************
+******************************* */
 .section-hero {
   text-align: center;
 }
@@ -112,3 +120,42 @@ header {
   position: relative;
   z-index: 2;
 }
+
+/* ******************************
+*******SECTION FEATURES**************
+******************************* */
+
+.section-feature {
+  position: relative;
+  z-index: -2;
+  background-color: var(--clr-primary);
+  color: #fff;
+  /* margin-top: -12rem; */
+  /* clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); */
+  padding: 5rem 0 10rem;
+  transform: skewY(12deg) translateY(-8rem);
+}
+
+.section-feature .wrapper{
+  transform: skewY(-12deg);
+}
+
+
+
+.feature:not(:last-child){
+  margin-bottom: 5rem;
+}
+
+.feature__header{
+  margin-bottom: 1rem;
+}
+
+.feature__icon{
+  margin-bottom: 1rem;
+}
+
+.heading__tertiary{
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
