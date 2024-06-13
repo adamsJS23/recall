@@ -197,11 +197,12 @@ header {
   display: inline-block;
   margin-bottom: 2rem;
 }
+
 /* ******************************
 *******FOOTER**************
 ******************************* */
 .footer {
-  padding: 4rem 0 6rem;
+  padding: 2rem 0 3rem;
   background-color: #ededed;
 }
 
@@ -213,26 +214,22 @@ header {
 
 .footer__cta-btns {
   display: flex;
-  justify-content: space-between;
-}
-
-.footer img{
-  width: 100%;
+  gap: 2rem;
 }
 
 .footer .wrapper > *:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer__nav--secondary {
   display: flex;
+  gap: 1rem;
 }
 
 .terms__link,
 .privacy__link {
   font-size: 1.4rem;
+  color: #363636;
+  text-decoration: underline;
 }
 
-.footer__nav--secondary li:nth-child(2)::before {
-  content: "-";
-}
