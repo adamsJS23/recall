@@ -306,6 +306,19 @@ header {
   /* Section features */
   .section-feature {
     transform: skewY(6deg) translateY(-12rem);
+    position: relative;
+  }
+
+  .section-feature::before {
+    content: "";
+    background-image: url("../assets/graphic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 8rem;
+    width: 12rem;
+    bottom: -4rem;
+    left: 6%;
   }
 
   .section-feature .wrapper {
@@ -371,6 +384,10 @@ header {
   }
 
   /* Section features */
+  .section-feature::before {
+    left: 20%;
+  }
+  
   .features {
     grid-template-columns: repeat(3, 1fr);
     height: 40rem;
