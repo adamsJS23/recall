@@ -180,7 +180,7 @@ header {
 .testimonial__img {
   border-radius: 1rem;
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -196,6 +196,10 @@ header {
   color: #5392bf;
   display: inline-block;
   margin-bottom: 2rem;
+}
+
+.testimonial__socials > :last-child {
+  margin-left: 1rem;
 }
 
 /* ******************************
@@ -233,3 +237,120 @@ header {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 43.15em) {
+  a,
+  p {
+    font-size: 2rem;
+  }
+
+  /* Header */
+  .header-cta {
+    display: inline;
+    background-color: #7e00fd;
+    color: #fff;
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav__link {
+    font-size: 2rem;
+  }
+
+  /* Section Hero */
+  .heading-primary {
+    font-size: 5.1rem;
+    line-height: 1.1;
+  }
+
+  .subheading {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .section-hero {
+    text-align: left;
+  }
+
+  .section-hero .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-hero .left-col {
+    flex: 2;
+  }
+  .hero-icon {
+    height: 5rem;
+    width: auto;
+  }
+
+  .section-hero .right-col {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    width: 100%;
+  }
+
+  .cta-btns {
+    justify-content: flex-start;
+  }
+
+  /* Section features */
+  .section-feature {
+    transform: skewY(6deg) translateY(-12rem);
+  }
+
+  .section-feature .wrapper {
+    transform: skewY(-6deg);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .feature:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+
+  .heading__tertiary {
+    font-size: 3.2rem;
+  }
+
+  /* Section testimonials */
+  .testimonial__info {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .testimonial__quote--1 {
+    font-size: 3.5rem;
+  }
+
+  .testimonial__quote--2 {
+    font-size: 2rem;
+  }
+
+  .testimonial__img {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .testimonial__links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__socials {
+    margin-top: auto;
+  }
+}
