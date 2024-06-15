@@ -237,6 +237,7 @@ header {
   text-decoration: underline;
 }
 
+/* Media queries -- Tablet */
 @media only screen and (min-width: 43.15em) {
   a,
   p {
@@ -328,11 +329,12 @@ header {
   /* Section testimonials */
   .testimonial__info {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   .testimonial__quote--1 {
     font-size: 3.5rem;
+    line-height: 1.1;
   }
 
   .testimonial__quote--2 {
@@ -352,5 +354,59 @@ header {
 
   .testimonial__socials {
     margin-top: auto;
+  }
+}
+
+/* Media queries --Desktop */
+@media only screen and (min-width: 62.5em) {
+  /* Section hero */
+  .section-hero .right-col {
+    position: auto;
+  }
+
+  .hero-img {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  /* Section features */
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    height: 40rem;
+  }
+
+  .feature:nth-child(1) {
+    grid-column: unset;
+  }
+
+  .feature:nth-child(2) {
+    align-self: center;
+  }
+
+  .feature:nth-child(3) {
+    align-self: end;
+  }
+
+  /* Section-testimonial */
+
+  .section-testimonials {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .testimonial__content {
+    margin-bottom: 0;
+    text-align: right;
+    flex: 1.9;
+  }
+
+  .testimonial__info {
+    flex: 1.1;
+  }
+
+  .testimonial__img {
+    width: 100%;
+    aspect-ratio: 1/1;
   }
 }
